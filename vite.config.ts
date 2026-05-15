@@ -7,12 +7,13 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-   base: '/markopus/', // Must match your GitHub repo name
+    // Must match your GitHub repo name
   plugins: [
     vue(),
     vueJsx(),
     vueDevTools(),
   ],
+  base: '/markopus/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
